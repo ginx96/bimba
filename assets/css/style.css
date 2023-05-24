@@ -409,6 +409,43 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+  padding-top: 20px;
+}
+
+.clients .swiper-slide img {
+  opacity: 0.5;
+  transition: 0.3s;
+  filter: grayscale(100);
+}
+
+.clients .swiper-slide img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffc451;
+}
+
+
+
+/*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
@@ -511,7 +548,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# Portfolio
+# Services Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -542,7 +579,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #0d79ac;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -558,7 +595,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(22, 116, 139, 0.6);
   position: absolute;
   left: 0;
   right: 0;
@@ -567,6 +604,7 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+  
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -579,23 +617,25 @@ section {
   transition: all ease-in-out 0.3s;
   display: flex;
   justify-content: center;
+  
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
+  color: #ffffff;
   font-size: 28px;
-  text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: center;
+  background: rgba(9, 141, 158, 0.95);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: rgba(9, 141, 158, 0.95);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #1f6686;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -621,6 +661,7 @@ section {
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
 }
+
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
