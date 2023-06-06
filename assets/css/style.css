@@ -703,7 +703,7 @@ color: rgb(11, 100, 112);
   float: left;
   width: 44px;
   height: 44px;
-  background: #dff3fc;
+  background: #0c161b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -716,14 +716,14 @@ color: rgb(11, 100, 112);
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  color: #080808;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #0d0d0e;
 }
 
 .contact .info .email p {
