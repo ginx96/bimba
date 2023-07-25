@@ -1,5 +1,5 @@
 /**
-* Template Name: iPortfolio
+* Template Name: IONOSOF
 * Updated: Mar 10 2023 with Bootstrap v5.2.3
 * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
 * Author: BootstrapMade.com
@@ -15,13 +15,14 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: #021720;
   text-decoration: none;
 }
 
 a:hover {
   color: #37b3ed;
   text-decoration: none;
+  font-size: 22px;
 }
 
 h1,
@@ -587,7 +588,7 @@ color: rgb(11, 100, 112);
 }
 
 .portfolio .portfolio-wrap {
-  background-color: #2abed446;
+  background-color: #fafafa46;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -595,22 +596,32 @@ color: rgb(11, 100, 112);
   font-size: 15px;
   padding: 15px;
   margin: 10px;
-  border: none;
+  border: 1px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.39);
 
+}
+
+.portfolio-details .portfolio-wrap .portfolio-info p {
+    text-align:justify;
+}
+.portfolio-details .portfolio-wrap .portfolio-info h4 {
+  text-align:justify;
+}
+.portfolio-details .portfolio-wrap .portfolio-info h6 {
+  text-align:justify;
 }
 
 .portfolio .portfolio-info {
 
-  background-color: rgba(136, 207, 235, 0.233);
+  background-color: rgba(255, 255, 255, 0.233);
   padding: 10px;
   border-radius: 5px;
 
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(202, 235, 248, 0.6);
+  background: rgba(255, 255, 255, 0.11);
   position: absolute;
   left: 0;
   right: 0;
@@ -619,6 +630,7 @@ color: rgb(11, 100, 112);
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+  box-shadow: 0 2px 4px rgb(9, 255, 0);
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
@@ -638,19 +650,20 @@ color: rgb(11, 100, 112);
   font-size: 22px;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   justify-content: center;
-  background: rgba(9, 141, 158, 0.95);
+  background: rgba(0, 0, 0, 0.95);
   transition: 0.3s;
   width: 100%;
   padding: 9px;
+  box-shadow: 0 2px 4px rgb(9, 255, 0);
 
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(9, 141, 158, 0.95);
+  box-shadow: 0 2px 4px rgb(9, 255, 0);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #1f6686;
+  box-shadow: 0 2px 4px rgb(9, 255, 0);
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -659,11 +672,23 @@ color: rgb(11, 100, 112);
   right: 0;
   bottom: 0;
   opacity: 1;
+  
+  box-shadow: 0 2px 4px rgb(9, 255, 0);
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-links {
   opacity: 1;
   bottom: 0;
+}
+
+.portfolio-info-background-section {
+  overflow: visible;
+  height: 1px; /* Ajusta la altura inicial para que el contenido se muestre completamente */
+  transition: height 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-info-background-section {
+  height: 0; /* Reduce la altura para ocultar el contenido al hacer hover */
 }
 
 /*--------------------------------------------------------------
@@ -672,6 +697,7 @@ color: rgb(11, 100, 112);
 .portfolio-details {
   padding-top: 40px;
   align-items: center;
+  
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -688,14 +714,13 @@ color: rgb(11, 100, 112);
 
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #e4e4e42d;
 }
 
-.portfolio-details .portfolio-info {
+.portfolio-details .portfolio-info { /*----- FONDO/BG ITEMS--------------*/
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  box-shadow: 0px 0 30px rgba(1, 39, 15, 0.116);
 }
-
 
 .portfolio-details .portfolio-info ul {
   list-style: none;
@@ -705,6 +730,36 @@ color: rgb(11, 100, 112);
 
 .portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
+  margin-left: 10px; 
+}
+
+
+
+
+.portfolio-details .portfolio-description h2 {
+  padding-top: 40px; /*-----TOP MARGIN TITLE ATLASSIAN SERVICES--------------*/
+  font-size: 26px; /*-----SIZE FOR ATLASSIAN SERVICES ITEMS --------------*/
+  font-weight: 700; /*-----NO SENSE --------------*/
+  margin-bottom: 20px; /*-----MARGEN TOP ITEMS --------------*/
+  text-align: justify;
+}
+
+.portfolio-details .portfolio-description p {
+  text-align: justify;
+
+}
+
+
+/*----------Está tocando algo realmente----------------------------------------------------
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+.portfolio-details .portfolio-info ul li+li {
+  margin-top: 10px;
+  margin-left: 10px; 
 }
 
 .portfolio-details .portfolio-description {
@@ -716,6 +771,7 @@ color: rgb(11, 100, 112);
   font-weight: 700;
   margin-bottom: 20px;
 }
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Posts
@@ -1194,8 +1250,9 @@ color: rgb(11, 100, 112);
 Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 140px;
 }
+
 
 .contact .info {
   padding: 30px;
@@ -1217,6 +1274,8 @@ Contact
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
 }
+
+
 
 .contact .info h4 {
   padding: 0 0 0 60px;
@@ -1373,6 +1432,7 @@ Contact
     transform: rotate(360deg);
   }
 }
+
 
 /*--------------------------------------------------------------
 # Breadcrumbs
