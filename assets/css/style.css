@@ -547,6 +547,100 @@ color: rgb(11, 100, 112);
   color: #151515;
 }
 
+/* About Section - Home Page
+------------------------------*/
+.servicesportfolio {
+  --color-background: #f4f4f4;
+}
+
+.servicesportfolio .content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px 20px;
+  background: rgba(var(--color-primary-rgb), 0.05);
+  color: var(--color-primary);
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.servicesportfolio .content h2 {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.servicesportfolio .content p:last-child {
+  margin-bottom: 0;
+}
+
+.servicesportfolio .content .read-more {
+  background: var(--color-primary);
+  color: var(--color-inverse);
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.servicesportfolio .icon-box {
+  padding: 50px 40px;
+  box-shadow: 0px 10px 15px rgba(8, 8, 8, 0.452);
+  border-radius: 10px;
+  transition: all 0.3s ease-out 0s;
+  background-color:  rgba(117, 178, 180, 0.116);
+  margin-bottom: 5px;
+}
+
+.servicesportfolio .icon-box i {  /*-----Caja de servicios------*/
+  height: 16px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: right;
+  justify-content: center;
+  margin-bottom: 26px;
+  font-size: 32px;
+  line-height: 0;
+  transition: all 0.4s ease-out 0s;
+  background-color: rgba(#1ae9d8), 0.05;
+  color:#1ae9d8;
+}
+
+.servicesportfolio .icon-box h3 { /*-----Titulo de Caja de servicios------*/
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.servicesportfolio .icon-box p {
+  margin-bottom: 0;
+}
+
+.servicesportfolio .icon-box:hover i {
+  background-color: var(--color-primary);
+  color: var(--color-inverse);
+}
+
+.servicesportfolio .icon-boxes .col-md-6:nth-child(2) .icon-box,
+.servicesportfolio .icon-boxes .col-md-6:nth-child(4) .icon-box {
+  margin-top: -40px;
+}
+
+@media (max-width: 768px) {
+
+  .servicesportfolio .icon-boxes .col-md-6:nth-child(2) .icon-box,
+  .servicesportfolio .icon-boxes .col-md-6:nth-child(4) .icon-box {
+    margin-top: 0;
+  }
+}
+
 /*--------------------------------------------------------------
 # Services Portfolio
 --------------------------------------------------------------*/
@@ -594,13 +688,15 @@ color: rgb(11, 100, 112);
   overflow: hidden;
   z-index: 1;
   font-size: 15px;
-  padding: 15px;
+  padding: 12px;
   margin: 10px;
   border: 1px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.39);
+  
 
 }
+
 
 .portfolio-details .portfolio-wrap .portfolio-info p {
     text-align:justify;
@@ -1243,6 +1339,95 @@ color: rgb(11, 100, 112);
 .aside-tags li a:focus {
   color: rgba(var(--color-black-rgb), 1);
   border: 1px solid rgba(var(--color-black-rgb), 0.5);
+}
+
+/* Faq Section - Home Page
+------------------------------*/
+.faq .content h3 {
+  color: var(--color-secondary);
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.faq .content p {
+  font-size: 15px;
+  color: rgba(var(--color-default-rgb), 0.7);
+}
+
+.faq .faq-container .faq-item {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 25px 0px rgba(var(--color-default-rgb), 0.1);
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq .faq-container .faq-item h3 {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+}
+
+.faq .faq-container .faq-item h3 .num {
+  color: var(--color-primary);
+  padding-right: 5px;
+}
+
+.faq .faq-container .faq-item h3:hover {
+  color: var(--color-primary);
+}
+
+.faq .faq-container .faq-item .faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p {
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: var(--color-primary);
+}
+
+.faq .faq-container .faq-active h3 {
+  color: var(--color-primary);
+}
+
+.faq .faq-container .faq-active .faq-content {
+  grid-template-rows: 1fr;
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle {
+  transform: rotate(90deg);
+  color:#149ddd
 }
 
 
