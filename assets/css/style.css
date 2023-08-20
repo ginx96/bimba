@@ -523,7 +523,7 @@ color: rgb(11, 100, 112);
   color: var(--color-primary);
   border-radius: 7px;
   display: inline-block;
-  margin-left: 30px;
+  margin-left: 30pxg;
 }
 
 .servicesportfolio .content h2 {
