@@ -421,22 +421,13 @@ color: rgb(11, 100, 112);
 /* Clients Section - Home Page
 ------------------------------*/
 
-.clients .client-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
- 
-}
 
 .clients .client-logo img {
-  padding: 20px;
-  max-width: 70%;
+  padding: 10px;
+  max-width: 60%;
   transition: 0.3s;
-  opacity: 0.2;
-  filter: grayscale(70);
+  opacity: 0.5;
   filter: saturate(70%);   /* Increases saturation */
-
 }
 
 .clients .client-logo img:hover {
@@ -444,19 +435,9 @@ color: rgb(11, 100, 112);
   opacity: 1;
 }
 
-@media (max-width: 640px) {
-  .clients .client-logo img {
-    padding-bottom: 5px;
-  }
-}
-
-
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
-.facts {
-  padding-bottom: 30px;
-}
 
 .facts .count-box {
   padding: 30px;
@@ -659,6 +640,69 @@ color: rgb(11, 100, 112);
   box-shadow: 0px 0 30px rgba(1, 39, 15, 0.116);
 }
 
+
+/* Video section - Home Page----*/
+
+/* Video section - Home Page */
+#video-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-video {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.video-content {
+  position: relative;
+  z-index: 1;
+  padding: 100px 40px; /* Ajusta el espaciado vertical y horizontal según tus preferencias */
+  color: #ffffff;
+}
+
+.video-content h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-align: left; /* Alineado a la izquierda */
+  font-style: italic; /* Cambia el estilo de la fuente a cursiva */
+  text-shadow: #040b14;
+}
+
+.video-content p {
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.3; /* Ajusta el espaciado entre líneas */
+  margin-top: 5px; /* Margen superior más pequeño */
+  margin-bottom: 5px;
+  text-shadow: #f7f5f3;
+  color:#50bebe
+  
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 20, 26, 0.5); /* Filtro oscuro con opacidad */
+  z-index: 0; /* Detrás del video */
+}
+
+
 /* Blog-posts Section - Home Page
 ------------------------------*/
 
@@ -719,6 +763,60 @@ margin-left: 30px;
   font-size: 14px;
   color: rgba(var(--color-default-rgb), 0.5);
   margin-bottom: 0;
+}
+
+/* Blog Article style */
+.portfolio-info {
+
+  margin-left: 20px;
+  margin: 20px;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.article {
+  max-width: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align:justify
+
+}
+
+.article h2 {
+  color: #178d60;
+}
+
+.article p {
+  margin-bottom: 20px;
+}
+
+.article .item {
+ margin-left: 5px;
+
+}
+.highlight {
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  max-width: 100px;
+}
+
+.highlight h3 {
+  color: #14dd90;
+}
+
+.highlight p {
+  margin-top: 10px;
+}
+
+.portfolio-info {
+  margin-top: 1px;
 }
 
 /* Faq Section - Home Page
